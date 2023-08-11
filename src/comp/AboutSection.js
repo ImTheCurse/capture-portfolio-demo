@@ -1,6 +1,8 @@
 import React from "react";
 import home1 from "../img/home1.png";
 import { About,Description,Image,Hide } from "../styles";
+import { motion } from "framer-motion";
+import { fade, titleAnim } from "../animation";
 
 function AboutSection(){
     return (
@@ -8,13 +10,13 @@ function AboutSection(){
             <Description>
                 <div className="title">
                     <Hide>
-                        <h2>We work to make</h2>
+                        <motion.h2 variants={titleAnim} initial = "hidden" animate= "show">We work to make</motion.h2>
 
                         <Hide>
-                        <h2>your <span>dreams</span> come </h2>
+                        <motion.h2 variants={titleAnim} initial = "hidden" animate= "show">your <span>dreams</span> come </motion.h2>
                         </Hide>
                         <Hide>
-                            <h2>true</h2>
+                            <motion.h2 variants={titleAnim} initial = "hidden" animate= "show">true</motion.h2>
                         </Hide>
 
                         <p>Contact us for any photography or videography idea that you have. we cant make your vision into reality! </p>
