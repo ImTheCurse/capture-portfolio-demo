@@ -1,43 +1,42 @@
 import React from "react";
 import styled from 'styled-components';
 import { About } from "../styles";
+import Toggle from "./toggle";
+import { LayoutGroup } from "framer-motion";
 
 const FaqSection = () =>{
     return (
         <Faq>
+            <LayoutGroup>
             <h2>Any Questions? <span>FAQ</span></h2>
-            <div className="question">
-                <h4>How Do I Start?</h4>
+            
+            <Toggle title = 'How Do I Start?'>
                     <div className="answer">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, nisi.</p>
                     </div>
-                <div className="faq-line"></div>
-            </div>
-
-            <div className="question">
-                <h4>What A Standard Timeline For A Project?</h4>
+                
+            </Toggle>
+            <Toggle title = 'What A Standard Timeline For A Project?'>
                     <div className="answer">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, nisi.</p>
                     </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toggle>
 
-            <div className="question">
-                <h4>Diffrent Payment Options</h4>
+            <Toggle title = 'Diffrent Payment Options'>
+            
                     <div className="answer">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, nisi.</p>
                     </div>
-                <div className="faq-line"></div>
-            </div>
+            
+            </Toggle>
 
-            <div className="question">
-                <h4>Daily Schedule</h4>
+            <Toggle title = 'Daily Schedule'>
                     <div className="answer">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, nisi.</p>
                     </div>
-                <div className="faq-line"></div>
-            </div>
-
+           
+            </Toggle>
+            </LayoutGroup>
         </Faq>
 
 
