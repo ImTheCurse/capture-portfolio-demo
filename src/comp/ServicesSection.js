@@ -5,13 +5,15 @@ import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 
+
+
 //styles
 import { About,Description,Image,Hide } from "../styles";
 import styled from 'styled-components';
 
 const ServicesSection = () =>{
     return (
-        <Services>
+        <Services >
             <Description>
                 <h2>High <span>quality</span> services</h2>
 
