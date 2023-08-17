@@ -6,6 +6,8 @@ import goodtimes from '../img/goodtimes-small.png';
 import theracer from '../img/theracer-small.png';
 import {motion} from 'framer-motion';
 import { slider,sliderContainer ,pageAnimation,fade,photoAnim } from "../animation";
+import ScrollTop from '../comp/ScrollTop';
+
 
 const OurWork = () =>{
     return(
@@ -45,6 +47,7 @@ const OurWork = () =>{
                 </Hide>
               </Link>
             </Movie>
+            <ScrollTop/>
         </Work>
     )
 };
